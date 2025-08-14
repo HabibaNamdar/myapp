@@ -36,7 +36,7 @@ Route::get('/menu', function () {
     return redirect()->route('login');
 });
 
-Route::rescource('category', CategoryController::class)->names('categories');
+Route::resource('category', CategoryController::class)->names('categories');
 
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
