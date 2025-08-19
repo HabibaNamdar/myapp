@@ -47,4 +47,28 @@ class CategoryController extends Controller
     {
         return view('categories.edit', compact('category'));
     }
+
+    public function update(Request $request, Category $category)
+    {
+        $request->validate([
+            'name' => 'required|max:255|unique:categories,name,' . $category->id,
+            'description' => 'nullable|string',
+        ]);
+
+        $category->update($request->all());
+
+        return redirect()->route('categories.index')
+                         ->with('success', 'Category updated successfully.');
+    }
+
+    /**
+     * Remove the specified category from storage.
+     */
+    public function destroy(Category $category)
+    {
+        $category->delete();
+
+        return redirect()->route('categories.index')
+                         ->with('success', 'Category deleted successfully.');
+    }
 }

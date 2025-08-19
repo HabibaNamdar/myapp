@@ -6,26 +6,52 @@
                                  <i class="fas fa-home"  style="color: rgb(237, 241, 237);"></i>
                                 Dashboard
                             </a>
-                            {{-- @can('user-list') --}}
-                                
                            
-                            <a class="nav-link" href="{{route('admin.users.index')}}">
-                               <i class="fas fa-users" style="color: rgb(237, 241, 237);"></i>
-                                Users
-                            </a> 
-                            {{-- @endcan --}}
-                            {{-- @can('role-list') --}}
-                                
                             
-                            <a class="nav-link" href="{{route('admin.roles.index')}}">
-                                <i class="fas fa-user-shield" style="color: rgb(237, 241, 237);"></i>
-                                Roles
-                            </a>
-                            {{-- @endcan --}}
 
                             <a class="nav-link" href="{{route('categories.index')}}">
                                 <i class="fas fa-list" style="color: rgb(237, 241, 237);"></i>
                                 Categories
+                            </a>
+
+                             <a class="nav-link" href="{{route('cities.index')}}">
+                                <i class="fas fa-city" style="color: rgb(237, 241, 237);"></i>
+                                Cities
+                            </a>
+
+                            <a class="nav-link" href="{{route('countries.index')}}">
+                                <i class="fas fa-map" style="color: rgb(237, 241, 237);"></i>
+                                Countries
+                            </a>
+
+                            <a class="nav-link" href="{{route('qualifications.index')}}">
+                                <i class="fas fa-graduation-cap" style="color: rgb(237, 241, 237);"></i>
+                                Qualifications
+                            </a>
+
+                            <a class="nav-link" href="{{route('skills.index')}}">
+                                <i class="fas fa-tools" style="color: rgb(237, 241, 237);"></i>
+                                Skills
+                            </a>
+
+                            <a class="nav-link" href="{{route('states.index')}}">
+                                <i class="fas fa-map-marker-alt" style="color: rgb(237, 241, 237);"></i>
+                                States
+                            </a>
+
+                            <a class="nav-link" href="{{route('jobs.index')}}">
+                                <i class="fas fa-briefcase text-light me-1" style="color: rgb(237, 241, 237);"></i>
+                                Jobs
+                            </a>
+                           
+                            <a class="nav-link" href="{{route('users.index')}}">
+                                <i class="fas fa-users" style="color: rgb(237, 241, 237);"></i>
+                                Users
+                            </a>
+
+                            <a class="nav-link" href="{{route('roles.index')}}">
+                                <i class="fas fa-user" style="color: rgb(237, 241, 237);"></i>
+                                Roles
                             </a>
                            
                           
